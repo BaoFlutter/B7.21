@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    print("Building Widget tổng");
     return Scaffold(
       appBar: AppBar(
         title: Text("Thông tin cá nhân"),
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20),
         child: Column(
           children: [
             // name widget
@@ -62,14 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 controller: birthYearController),
 
             // confirm button Widget
-            /*
-            ElevatedButton(
-                onPressed: () {
-                  print("Đã xác nhận");
-                },
-                child: Text("Xác nhận")),
-
-             */
+            const SpaceWidget(),
             confirmButtonWidget(
                 buttonTitle: "Xác nhận",
                 onPressed: (){
@@ -78,6 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     age = (DateTime.now().year - int.parse(birthYearController!.text)).toString();
                   });
                 }),
+            const SpaceWidget(),
             informationWidget(
                 userNameContent: userName,
                 ageContent: age),
@@ -95,6 +90,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
+
 
   Widget informationWidget({required String userNameContent, required String ageContent}){
     return Container(
@@ -156,5 +153,16 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
+class SpaceWidget extends StatelessWidget {
+  const SpaceWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    print("Building sized box");
+    return SizedBox(
+      height: 10,
+    );
+  }
+}
 
 
