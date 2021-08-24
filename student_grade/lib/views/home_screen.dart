@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:student_grade/getx_controllers/adjustment_controller.dart';
+import 'package:student_grade/getx_controllers/adjustment_controller_obx.dart';
 import 'package:student_grade/resources/strings.dart';
 import 'package:student_grade/resources/widgets/custom_button_widget.dart';
 import 'package:student_grade/resources/widgets/text_card.dart';
@@ -58,6 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
       print("Building widget tree tổng") ;
     };
 
+    final controlerObx =  Get.put(AdjustmentControllerObx());
+
     return Scaffold(
       appBar: AppBar(
         title: Text(STUDENT_ADJUSTMENT),
@@ -83,6 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         mathMark: double.parse(mathMarkController!.text),
                         litetureMark: double.parse(litetureMarkController!.text),
                         englishMark: double.parse(englishMarkController!.text));
+
                     /*
                   setState(() {
                     averageMark = getAverageMark(
