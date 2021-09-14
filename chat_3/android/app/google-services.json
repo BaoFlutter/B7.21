@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "167310680360",
+    "project_id": "chat-143b3",
+    "storage_bucket": "chat-143b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167310680360:android:612343e5e5c64c4bb8b01d",
+        "android_client_info": {
+          "package_name": "com.baoflutter.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167310680360-lm5m9di8l20sf7tas4853jc2480aic6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.baoflutter.chat",
+            "certificate_hash": "3d57b9423f94a184961bbe6e80d55d7da544e535"
+          }
+        },
+        {
+          "client_id": "167310680360-tq6ea7j3iv4rt503eqsdl04aqdm0bp0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPMfB4JHOSrF6lbZupsobABJCv1DW_uvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167310680360-tq6ea7j3iv4rt503eqsdl04aqdm0bp0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
